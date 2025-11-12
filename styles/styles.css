@@ -1,0 +1,156 @@
+/* 
+   PORTFOLIO WEBSITE STYLES
+   This CSS file contains all the styling for our portfolio website.
+   Each section is clearly labeled with comments.
+*/
+
+/* ===== BASIC COLORS ===== */
+/* We define colors here so we can reuse them throughout the site */
+:root {
+  --blue-color: #0891b2;
+  --light-gray: #f8fafc;
+  --dark-text: #1e293b;
+  --gray-text: #64748b;
+}
+
+/* ===== RESET DEFAULT STYLES ===== */
+/* Remove default spacing from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY STYLING ===== */
+/* Basic styling for the entire page */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--dark-text);
+  background-color: var(--light-gray);
+  line-height: 1.6;
+}
+
+/* ===== NAVIGATION BAR ===== */
+/* Styling for the top navigation menu */
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navbar-brand {
+  font-weight: bold;
+  color: var(--blue-color) !important;
+  font-size: 1.5rem;
+}
+
+/* Navigation links */
+.nav-link {
+  color: var(--dark-text) !important;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+/* Change color when hovering over links */
+.nav-link:hover {
+  color: var(--blue-color) !important;
+}
+
+/* Active page link color */
+.nav-link.active {
+  color: var(--blue-color) !important;
+}
+
+/* ===== HERO SECTION (Home Page) ===== */
+/* Large section at the top of the home page */
+.hero-section {
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 50px;
+  background-color: #eadff6;
+}
+
+/* Main title on hero section */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--blue-color);
+  margin-bottom: 20px;
+}
+
+/* ===== CARDS ===== */
+/* Box styling for content sections */
+.custom-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+/* Icon circles inside cards */
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes it circular */
+  background: #e0f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* ===== BUTTONS ===== */
+/* Blue button styling */
+.btn-primary {
+  background: var(--blue-color);
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+  background: #0e7490;
+}
+
+/* Outlined button */
+.btn-outline-primary {
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Outlined button hover */
+.btn-outline-primary:hover {
+  background: var(--blue-color);
+  color: white;
+}
+
+/* ===== SECTION SPACING ===== */
+/* Adds space above and below sections */
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Section title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Section subtitle */
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--gray-text);
+  text-align: center;
+  margin-bottom: 50px;
+}
