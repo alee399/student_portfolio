@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+        <div class="container section-padding">
+            <!-- Page Header -->
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="section-title">About Me</h1>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="row g-4">
+                <!-- Left Column - Profile Image -->
+                <div class="col-lg-4">
+                    <div class="custom-card text-center">
+                        <!-- Profile Image Placeholder -->
+                        <div style="width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(135deg, #e0f7fa, #b2ebf2); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+                            👤
+                        </div>
+                        <h3 class="fw-bold mb-2">John Doe</h3>
+                        <p class="text-muted-custom">Web Developer</p>
+                    </div>
+                </div>
+
+                <!-- Right Column - About Information -->
+                <div class="col-lg-8">
+                    <!-- Bio Card -->
+                    <div class="custom-card mb-4">
+                        <h2 class="h4 fw-bold mb-3">My Story</h2>
+                        <p class="mb-3">
+                            Hello! I'm a passionate web developer with a love for creating beautiful 
+                            and functional websites. I enjoy turning complex problems into simple, 
+                            beautiful, and intuitive designs.
+                        </p>
+                        <p class="mb-0">
+                            When I'm not coding, you can find me reading tech blogs, learning new 
+                            technologies, or working on personal projects. I believe in continuous 
+                            learning and always staying up-to-date with the latest web technologies.
+                        </p>
+                    </div>
+
+                    <!-- Education Card -->
+                    <div class="custom-card mb-4">
+                        <h2 class="h4 fw-bold mb-3">Education</h2>
+                        <div class="mb-3">
+                            <h5 class="fw-bold mb-1">Bachelor of Computer Science</h5>
+                            <p class="text-muted-custom mb-1">University Name</p>
+                            <p class="text-muted-custom small">2018 - 2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Interests Card -->
+                    <div class="custom-card">
+                        <h2 class="h4 fw-bold mb-3">Interests</h2>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tech-badge">Web Development</span>
+                            <span class="tech-badge">UI/UX Design</span>
+                            <span class="tech-badge">Photography</span>
+                            <span class="tech-badge">Reading</span>
+                            <span class="tech-badge">Gaming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
