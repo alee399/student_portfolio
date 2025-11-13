@@ -155,3 +155,46 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+
+/* Contact Form */
+.contact-icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(8, 145, 178, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(8, 145, 178, 0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+ }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Utility Classes */
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(20, 184, 166, 0.05));
+}
+
