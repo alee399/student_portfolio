@@ -1,0 +1,212 @@
+/* ===============================
+   🎯 SKILLS SECTION STYLES ONLY
+   =============================== */
+
+
+/* Card Styles */
+.custom-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-hover);
+}
+
+/* Progress Bar for Technical Skills */
+.skill-bar {
+  background: var(--border-color);
+  height: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.skill-progress {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  height: 100%;
+  transition: width 1s ease;
+  border-radius: 1rem;
+}
+
+/* Soft Skills & Tools Cards */
+.bg-gradient {
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(20, 184, 166, 0.05));
+}
+
+/* Badge Styles for Currently Learning */
+.tech-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(8, 145, 178, 0.1);
+  color: var(--primary-color);
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
+
+/* Utility Classes */
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive Styles for Skills Section */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+  .section-padding {
+    padding: 3rem 0;
+  }
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+
+/* Project Card */
+.project-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-hover);
+}
+
+/* Project Image (Emoji or Icon Area) */
+.project-image {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Content */
+.project-content h3 {
+  color: var(--text-dark);
+}
+
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+/* Tech Badge */
+.tech-badge {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background: rgba(8, 145, 178, 0.1);
+  color: var(--primary-color);
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Custom Card for CTA Section */
+.custom-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+  background-color: var(--card-hover);
+}
+
+/* Background Gradient (for bottom CTA box) */
+.bg-gradient {
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(20, 184, 166, 0.05));
+}
+
+/* Animation (Fade-in effect) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
