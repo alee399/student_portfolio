@@ -1,0 +1,187 @@
+/* -------------------- Page Background -------------------- */
+body {
+  background-color: #fff; /* light blue page background */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------- Project Page Layout -------------------- */
+.project-page-content {
+  padding-top: 0px; /* space below navbar */
+  min-height: 100vh;
+}
+
+/* -------------------- Project Card -------------------- */
+.project-page-content .project-card {
+  background-color: #3fa9ca; /* darker blue */
+  color: #fff; /* white text for contrast */
+  border: 1px solid #3e9fbc;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.project-page-content .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background-color: #12b0e2; /* slightly brighter on hover */
+}
+
+/* -------------------- Project Image -------------------- */
+.project-page-content .project-image {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.project-page-content .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------------------- Project Content -------------------- */
+.project-page-content .project-content {
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.project-page-content .project-content h3,
+.project-page-content .project-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.project-page-content .project-content p {
+  margin-bottom: 1rem;
+  color: rgba(255, 253, 253, 0.8);
+}
+
+/* -------------------- Tech Badges -------------------- */
+.tech-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+/* -------------------- Contact Form -------------------- */
+.project-page-content .contact-icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.project-page-content .form-control:focus {
+  border-color: #0ca3d2;
+  box-shadow: 0 0 0 0.2rem rgba(184, 214, 223, 0.25);
+}
+
+/* -------------------- Animations -------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* -------------------- Utility Classes -------------------- */
+.text-muted-custom {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(8, 145, 178, 0.05),
+    rgba(20, 184, 166, 0.05)
+  );
+}
+
+/* -------------------- Social Icons -------------------- */
+.social-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.social-icon:hover {
+  background: #fff;
+  color: #0ca3d2;
+  transform: translateY(-3px);
+}
+
+/* -------------------- Section Titles -------------------- */
+.section-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #107793;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: #0b8bb0;
+  font-size: 1.1rem;
+}
+
+/* -------------------- Call to Action Card -------------------- */
+.custom-card {
+  border-radius: 1rem;
+  padding: 2.5rem;
+  border: 1px solid #0b8bb0;
+  background-color: #0ca3d2;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-padding {
+    padding: 3rem 0;
+  }
+
+  .project-page-content {
+    padding-top: 100px; /* slightly less on smaller screens */
+  }
+}
