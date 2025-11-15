@@ -12,6 +12,36 @@
   --text-muted: #64748b;
 }
 
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navbar-brand {
+  font-weight: bold;
+  color: #0891b2 !important; /* same blue */
+  font-size: 1.5rem;
+}
+
+/* Navigation links */
+.nav-link {
+  color: #1e293b !important; /* dark text */
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #0891b2 !important; /* blue */
+}
+
+/* Active link */
+.nav-link.active {
+  color: #0891b2 !important;
+}
+
+
 /* Section Styles */
 .section-padding {
   padding: 5rem 0;
