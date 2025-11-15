@@ -6,8 +6,23 @@
 
 /* ===== BASIC COLORS ===== */
 /* We define colors here so we can reuse them throughout the site */
+<<<<<<< HEAD
 .aboutme-section {
     background: #f8f9fa; /* light grey background */
+=======
+:root {
+  --blue-color: #0891b2;
+  --light-gray: #f8fafc;
+  --dark-text: #1e293b;
+  --gray-text: #64748b;
+  --primary-color: #0891b2;
+  --accent-color: #14b8a6;
+  --border-color: #e2e8f0;
+  --bg-white: #ffffff;
+  --card-hover: #f1f5f9;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+>>>>>>> 3f6d145 (finalize changes by aleeSher)
 }
 
 .about-img {
@@ -107,8 +122,7 @@ body {
 /* ===== SECTION SPACING ===== */
 /* Adds space above and below sections */
 .section-padding {
-  padding: 80px 0;
-  background-color: #e0f7fa;
+  padding: 100px 0;
 }
 
 /* Section title */
@@ -149,7 +163,7 @@ body {
   from {
     opacity: 0;
     transform: translateY(20px);
- }
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -166,6 +180,7 @@ body {
 }
 
 .bg-gradient {
+<<<<<<< HEAD
   background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(20, 184, 166, 0.05));
 =======
 .about-img:hover {
@@ -189,5 +204,62 @@ body {
     padding-left: 0;
     font-size: 1rem;
 >>>>>>> ec3b78f623298bafb1105a2db559278a941ba425
+=======
+  background: linear-gradient(
+    135deg,
+    rgba(8, 145, 178, 0.05),
+    rgba(20, 184, 166, 0.05)
+  );
+>>>>>>> 3f6d145 (finalize changes by aleeSher)
 }
 
+.project-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+/* Card Styles */
+.skill-custom-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.skill-custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-hover);
+}
+
+/* Progress Bar for Technical Skills */
+.skill-bar {
+  background: var(--border-color);
+  height: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.skill-progress {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  height: 100%;
+  transition: width 1s ease;
+  border-radius: 1rem;
+}
+
+/* Badge Styles for Currently Learning */
+.tech-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(8, 145, 178, 0.1);
+  color: var(--primary-color);
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0.25rem;
+}
