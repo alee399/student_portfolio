@@ -1,6 +1,6 @@
 /* -------------------- Page Background -------------------- */
 body {
-  background-color: #fff; /* light blue page background */
+  background-color: #fff; 
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
@@ -8,14 +8,14 @@ body {
 
 /* -------------------- Project Page Layout -------------------- */
 .project-page-content {
-  padding-top: 0px; /* space below navbar */
+  padding-top: 0px; 
   min-height: 100vh;
 }
 
 /* -------------------- Project Card -------------------- */
 .project-page-content .project-card {
-  background-color: #3fa9ca; /* darker blue */
-  color: #fff; /* white text for contrast */
+  background-color: #3fa9ca; 
+  color: #fff; 
   border: 1px solid #3e9fbc;
   border-radius: 1rem;
   overflow: hidden;
@@ -26,7 +26,7 @@ body {
 .project-page-content .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  background-color: #12b0e2; /* slightly brighter on hover */
+  background-color: #12b0e2; 
 }
 
 /* -------------------- Project Image -------------------- */
@@ -86,7 +86,7 @@ body {
 
 .project-page-content .form-control:focus {
   border-color: #0ca3d2;
-  box-shadow: 0 0 0 0.2rem rgba(184, 214, 223, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(12,163,210,0.25);
 }
 
 /* -------------------- Animations -------------------- */
@@ -143,12 +143,12 @@ body {
 .section-title {
   font-size: 2.75rem;
   font-weight: 700;
-  color: #107793;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
 .section-subtitle {
-  color: #0b8bb0;
+  color: #000000;
   font-size: 1.1rem;
 }
 
@@ -182,6 +182,6 @@ body {
   }
 
   .project-page-content {
-    padding-top: 100px; /* slightly less on smaller screens */
+    padding-top: 100px; 
   }
 }

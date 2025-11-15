@@ -6,21 +6,19 @@
 
 /* ===== BASIC COLORS ===== */
 /* We define colors here so we can reuse them throughout the site */
-:root {
-  --blue-color: #0891b2;
-  --light-gray: #f8fafc;
-  --dark-text: #1e293b;
-  --gray-text: #64748b;
+.aboutme-section {
+    background: #f8f9fa; /* light grey background */
 }
 
-/* ===== RESET DEFAULT STYLES ===== */
-/* Remove default spacing from all elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.about-img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border: 6px solid #ffffff;
+    transition: 0.4s ease;
 }
 
+<<<<<<< HEAD
 /* ===== BODY STYLING ===== */
 /* Basic styling for the entire page */
 body {
@@ -169,5 +167,27 @@ body {
 
 .bg-gradient {
   background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(20, 184, 166, 0.05));
+=======
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d6efd; /* Bootstrap primary color */
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.list-group-item {
+    border: none;
+    padding-left: 0;
+    font-size: 1rem;
+>>>>>>> ec3b78f623298bafb1105a2db559278a941ba425
 }
 
