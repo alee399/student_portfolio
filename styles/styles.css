@@ -6,13 +6,9 @@
 
 /* ===== BASIC COLORS ===== */
 /* We define colors here so we can reuse them throughout the site */
-<<<<<<< HEAD
-.aboutme-section {
-    background: #f8f9fa; /* light grey background */
-=======
 :root {
   --blue-color: #0891b2;
-  --light-gray: #f8fafc;
+  --light-gray: #e9e9e9;
   --dark-text: #1e293b;
   --gray-text: #64748b;
   --primary-color: #0891b2;
@@ -22,18 +18,35 @@
   --card-hover: #f1f5f9;
   --text-dark: #1e293b;
   --text-muted: #64748b;
->>>>>>> 3f6d145 (finalize changes by aleeSher)
+}
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about-img {
-    width: 230px;
-    height: 230px;
-    object-fit: cover;
-    border: 6px solid #ffffff;
-    transition: 0.4s ease;
+/* Logo styling */
+.navbar-brand {
+  font-weight: bold;
+  color: #0891b2 !important; /* same blue */
+  font-size: 1.5rem;
 }
 
-<<<<<<< HEAD
+/* Navigation links */
+.nav-link {
+  color: #1e293b !important; /* dark text */
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #0891b2 !important; /* blue */
+}
+
+/* Active link */
+.nav-link.active {
+  color: #0891b2 !important;
+}
 /* ===== BODY STYLING ===== */
 /* Basic styling for the entire page */
 body {
@@ -42,10 +55,6 @@ body {
   background-color: var(--light-gray);
   line-height: 1.6;
 }
-
-/* ===== NAVIGATION BAR ===== */
-/* Styling for the top navigation menu */
-≈
 
 /* ===== HERO SECTION (Home Page) ===== */
 /* Large section at the top of the home page */
@@ -179,47 +188,6 @@ body {
   color: var(--text-muted);
 }
 
-.bg-gradient {
-<<<<<<< HEAD
-  background: linear-gradient(135deg, rgba(8, 145, 178, 0.05), rgba(20, 184, 166, 0.05));
-=======
-.about-img:hover {
-    transform: scale(1.05);
-}
-
-.about-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0d6efd; /* Bootstrap primary color */
-}
-
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
-}
-
-.list-group-item {
-    border: none;
-    padding-left: 0;
-    font-size: 1rem;
->>>>>>> ec3b78f623298bafb1105a2db559278a941ba425
-=======
-  background: linear-gradient(
-    135deg,
-    rgba(8, 145, 178, 0.05),
-    rgba(20, 184, 166, 0.05)
-  );
->>>>>>> 3f6d145 (finalize changes by aleeSher)
-}
-
-.project-card {
-  background: white;
-  border: 1px solid #e2e8f0;
-  border-radius: 15px;
-  padding: 30px;
-  margin-bottom: 20px;
-}
 /* Card Styles */
 .skill-custom-card {
   background: var(--bg-white);
