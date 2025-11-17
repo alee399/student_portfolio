@@ -7,11 +7,11 @@
 /* ===== BASIC COLORS ===== */
 /* We define colors here so we can reuse them throughout the site */
 :root {
-  --blue-color: #0891b2;
+  --blue-color: #00cdff;
   --light-gray: #e9e9e9;
   --dark-text: #1e293b;
   --gray-text: #64748b;
-  --primary-color: #0891b2;
+  --primary-color: #00cdff;
   --accent-color: #14b8a6;
   --border-color: #e2e8f0;
   --bg-white: #ffffff;
@@ -64,8 +64,8 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url(../project.images/home.jpg);
+  background-size: contain;
   background-position: center;
-  background-size: cover;
   position: relative;
 }
 .layout {
@@ -208,10 +208,10 @@ body {
   height: 100%;
 }
 
-.skill-custom-card:hover {
+.custom-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background-color: var(--card-hover);
+  transition: 0.2s;
 }
 
 /* Progress Bar for Technical Skills */
