@@ -63,8 +63,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 20px 50px;
-  background-color: #e0f7fa;
+  background-image: url(../project.images/home.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Main title on hero section */
