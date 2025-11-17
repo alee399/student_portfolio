@@ -8,7 +8,7 @@
 /* We define colors here so we can reuse them throughout the site */
 :root {
   --blue-color: #00cdff;
-  --light-gray: #e9e9e9;
+  --light-blue: #e9fcff;
   --dark-text: #1e293b;
   --gray-text: #64748b;
   --primary-color: #00cdff;
@@ -52,7 +52,7 @@
 body {
   font-family: "Inter", Arial, sans-serif;
   color: var(--dark-text);
-  background-color: var(--light-gray);
+  background-color: var(--light-blue);
   line-height: 1.6;
 }
 
@@ -160,6 +160,12 @@ body {
   margin-bottom: 50px;
 }
 
+.profile-pic img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
 /* Contact Form */
 .contact-icon-box {
   width: 3rem;
@@ -263,15 +269,15 @@ body {
 /* Card top image styling */
 .card-image {
   width: 100%;
-  height: 200px; 
+  height: 200px;
   overflow: hidden;
-  border-radius: 15px 15px 0 0; 
+  border-radius: 15px 15px 0 0;
   margin-bottom: 15px;
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 }
