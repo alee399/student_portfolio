@@ -7,8 +7,8 @@
 /* ===== BASIC COLORS ===== */
 /* We define colors here so we can reuse them throughout the site */
 :root {
-  --blue-color: #00cdff;
-  --light-blue: #e9fcff;
+  --blue-color: #0891b2;
+  --light-blue: #f2fdff;
   --dark-text: #1e293b;
   --gray-text: #64748b;
   --primary-color: #00cdff;
@@ -21,7 +21,7 @@
 }
 .navbar {
   background-color: white !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Logo styling */
@@ -74,7 +74,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.66);
 }
 
 /* Main title on hero section */
