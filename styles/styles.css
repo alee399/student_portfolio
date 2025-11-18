@@ -14,14 +14,14 @@
   --primary-color: #00cdff;
   --accent-color: #14b8a6;
   --border-color: #e2e8f0;
-  --bg-white: #ffffff;
   --card-hover: #f1f5f9;
   --text-dark: #1e293b;
   --text-muted: #64748b;
+  --light-gray: #f1f1f1;
 }
 .navbar {
   background-color: white !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo styling */
@@ -52,7 +52,7 @@
 body {
   font-family: "Inter", Arial, sans-serif;
   color: var(--dark-text);
-  background-color: var(--light-blue);
+  background-color: var(--light-gray);
   line-height: 1.6;
 }
 
@@ -288,4 +288,19 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* footer section */
+.quick-links a:hover {
+  color: var(--blue-color) !important;
+  transition: 0.2s;
+}
+
+.social-links a:hover {
+  color: var(--blue-color) !important;
+  transition: 0.2s;
+}
+
+footer {
+  background: var(--dark-text);
 }
