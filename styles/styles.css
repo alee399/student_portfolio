@@ -63,7 +63,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../project.images/home.jpg);
+  background-image: url(../images/home.jpg);
   background-size: contain;
   background-position: center;
   position: relative;
