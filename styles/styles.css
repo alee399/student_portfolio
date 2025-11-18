@@ -141,7 +141,7 @@ body {
 /* ===== SECTION SPACING ===== */
 /* Adds space above and below sections */
 .section-padding {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 /* Section title */
@@ -164,6 +164,7 @@ body {
   width: 220px;
   height: 220px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Contact Form */
@@ -234,6 +235,13 @@ body {
   height: 100%;
   transition: width 1s ease;
   border-radius: 1rem;
+}
+.bg-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 16, 16, 0.05),
+    rgba(20, 184, 166, 0.05)
+  ) !important;
 }
 
 /* Badge Styles for Currently Learning */

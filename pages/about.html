@@ -19,7 +19,7 @@
     />
 
     <!-- Our custom CSS -->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
 
     <!-- Bootstrap Icons -->
     <link
@@ -29,38 +29,7 @@
   </head>
   <body>
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- PAGE CONTENT -->
     <div class="page-content">
@@ -81,8 +50,8 @@
           <div class="col-lg-4">
             <div class="custom-card text-center">
               <!-- Profile Image Placeholder -->
-              <div class="profile-pic">
-                <img src="project.images/profile.jpg" alt="profile pic" />
+              <div class="profile-pic mb-4">
+                <img src="../project.images/profile.jpg" alt="profile pic" />
               </div>
               <h3 class="fw-bold mb-2">Abdur Rehman</h3>
               <p class="text-muted-custom">Web Developer</p>
@@ -135,5 +104,20 @@
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      fetch("/components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+
+          let currentPage = location.pathname;
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+              link.classList.add("active");
+            }
+          });
+        });
+    </script>
   </body>
 </html>
